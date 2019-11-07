@@ -12,6 +12,7 @@ namespace DJMobileAPI.Controllers
     public class DJController : ApiController
     {
         private SongService _songService = new SongService();
+        private UserService _userService = new UserService();
 
         public DJController()
         {
@@ -23,6 +24,15 @@ namespace DJMobileAPI.Controllers
         {
             var songs = _songService.GetSongs(searchText);
             return songs;
+        }
+
+        // GET api/dj/callback?code=
+        [HttpGet]
+        [Route("api/dj/callback")]
+        public string LoginUser(string code)
+        {
+            var authToken = _userService.GetAuthToken(code);
+            return authToken;
         }
 
         // POST api/dj/queue

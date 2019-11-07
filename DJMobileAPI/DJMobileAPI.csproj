@@ -171,9 +171,11 @@
     <Compile Include="Repository\FilterRepository.cs" />
     <Compile Include="Repository\QueueRepository.cs" />
     <Compile Include="Repository\SongRepository.cs" />
+    <Compile Include="Repository\UserRepository.cs" />
     <Compile Include="Service\FilterService.cs" />
     <Compile Include="Service\QueueService.cs" />
     <Compile Include="Service\SongService.cs" />
+    <Compile Include="Service\UserService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
