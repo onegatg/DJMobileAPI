@@ -3,3 +3,9 @@
 ################################################################################
 
 /DJMobileAPI/bin/roslyn
+/DJMobileAPI/obj/Debug
+/packages
+/.vs/DJMobileAPI/config
+/.vs/DJMobileAPI/v16/Server/sqlite3
+/.vs/DJMobileAPI/v16
+/.vs

@@ -18,7 +18,7 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44370</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -172,6 +172,7 @@
     <Compile Include="Repository\QueueRepository.cs" />
     <Compile Include="Repository\SongRepository.cs" />
     <Compile Include="Repository\UserRepository.cs" />
+    <Compile Include="RequireHttpsAttribute.cs" />
     <Compile Include="Service\FilterService.cs" />
     <Compile Include="Service\QueueService.cs" />
     <Compile Include="Service\SongService.cs" />
@@ -207,6 +208,7 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="nuget.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
