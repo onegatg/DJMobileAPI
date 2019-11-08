@@ -16,7 +16,7 @@ namespace DJMobileAPI.Repository
         {
             dynamic jsonObject;
             string authToken = "";
-            string redirectUri = "http://localhost:8888/callback";
+            string redirectUri = "http://localhost:63398/api/dj/callback?code=" + code;
             string  grantType = "authorization_code";
             var authorizationBytes = System.Text.Encoding.UTF8.GetBytes("47a5c9cece574b54bd77ab03ddc871a8:2bf2b897723844f5a1e2c1c094f10e49");
             var authorization = System.Convert.ToBase64String(authorizationBytes);
@@ -53,7 +53,7 @@ namespace DJMobileAPI.Repository
                         }
                     }
                 }
-                    return authToken;
+                return authToken;
             }
             catch (Exception ex)
             {
